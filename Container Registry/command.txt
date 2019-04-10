@@ -1,0 +1,2 @@
+docker build -t gcr.io/your_project/appengine/default.mydmapp .
+gcloud docker -- push gcr.io/your_project/appengine/default.mydmapp
