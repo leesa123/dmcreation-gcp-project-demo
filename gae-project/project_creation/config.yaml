@@ -58,13 +58,13 @@ resources:
                 members:
                   # NOTE: The DM service account that is creating this project will
                   # automatically be added as an owner.
-                  - user:s.lee@rescuenow.co.jp
+                  - user:xxxx@xxxxxxxxxx
               - role: roles/viewer
                 members:
-                  - user:s.lee@rescuenow.co.jp
+                  - user:xxxx@xxxxxxxxxx
               - role: roles/editor
                 members:
-                  - user:s.lee@rescuenow.co.jp
+                  - user:xxxx@xxxxxxxxxx
             # The bindings to remove. Note that these are idempotent, in the sense
             # that any binding here that is not actually on the project is considered
             # to have been removed successfully.
