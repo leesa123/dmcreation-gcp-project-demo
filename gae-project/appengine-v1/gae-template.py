@@ -33,7 +33,7 @@ def GenerateConfig(context):
 def FillintheFilesObject(strval):
     Object = {}
 
-    files_ary = strval.split('&')
+    files_ary = strval.split(',')
 
     for content in files_ary:
         content_to_ary = content.split('=')
