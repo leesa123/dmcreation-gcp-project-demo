@@ -23,9 +23,12 @@ d_type = {
 def GenerateConfig(context):
     """Creates the App Engine with single templates."""
     resources = []
+    fileinfo = {} 
     files_str_value = context.properties['fileinfo'] 
+    
+    if d_type['deployment.file'] == context.properties['deployment_type']:
+        fileinfo = FillintheFilesObject(files_str_value)
 
-    fileinfo = FillintheFilesObject(files_str_value)
     AppendResourceOb(context, resources, fileinfo)
 
     return {'resources': resources}
